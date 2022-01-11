@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/jsonrpc/client/index.ts"],"names":[],"mappings":";AAAA,gEAAgE;AAChE,sCAAsC;;;AAEtC,sDAAuB;AACvB,oDAAqB","sourcesContent":["// Copyright 2020-2021 OnFinality Limited authors & contributors\n// SPDX-License-Identifier: Apache-2.0\n\nexport * from './http';\nexport * from './ws';\n"]}

@@ -1,0 +1,52 @@
+{
+  "name": "package-json-type",
+  "version": "1.0.3",
+  "author": {
+    "email": "ajaxlab7@gmail.com",
+    "name": "ajaxlab",
+    "url": "https://github.com/ajaxlab"
+  },
+  "bugs": {
+    "url": "https://github.com/ajaxlab/package-json-type/issues"
+  },
+  "description": "A TypeScript definition for the package.json",
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.12.1",
+    "tslint-lines-between-class-members": "^1.3.1",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.2.0",
+    "typescript": "^3.3.3"
+  },
+  "files": [
+    "src",
+    "types"
+  ],
+  "homepage": "https://github.com/ajaxlab/package-json-type",
+  "keywords": [
+    "package-json",
+    "package.json",
+    "package.d.ts",
+    "typescript",
+    "definition",
+    "d.ts"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaxlab/package-json-type.git"
+  },
+  "scripts": {
+    "build": "yarn run lint && yarn run test && yarn run clean && tsc -b",
+    "clean": "rimraf types",
+    "dev": "tsc -b --watch",
+    "doc": "typedoc --excludePrivate --mode file --out docs src",
+    "lint": "tslint 'src/**/*.ts' 'test/**/*.ts'",
+    "md": "typedoc --mode file --theme markdown --mdEngine gitbook --out md src",
+    "prepare": "yarn run build",
+    "prepack": "yarn run doc && yarn run md",
+    "test": "ts-node test/package-json.spec.ts"
+  },
+  "types": "types/index.d.ts"
+}

@@ -1,0 +1,16 @@
+// Copyright 2017-2021 @polkadot/types authors & contributors
+// SPDX-License-Identifier: Apache-2.0
+import { UInt } from "../codec/UInt.js";
+/**
+ * @name u256
+ * @description
+ * A 256-bit unsigned integer
+ */
+
+export class u256 extends UInt.with(256) {
+  constructor(...args) {
+    super(...args);
+    this.__UIntType = 'u256';
+  }
+
+}

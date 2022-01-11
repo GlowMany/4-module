@@ -1,0 +1,24 @@
+{
+  "name": "interface-store",
+  "version": "1.0.2",
+  "description": "A generic interface for storing and retrieving data",
+  "main": "src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "aegir build",
+    "test": "echo \"No tests configured\"",
+    "lint": "aegir ts -p check && aegir lint",
+    "dep-check": "aegir dep-check"
+  },
+  "homepage": "https://github.com/ipfs/js-ipfs-interfaces/tree/master/packages/interface-store#readme",
+  "bugs": "https://github.com/ipfs/js-ipfs-interfaces/issues",
+  "license": "(Apache-2.0 OR MIT)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipfs/js-ipfs-interfaces.git"
+  },
+  "devDependencies": {
+    "aegir": "^35.0.0"
+  },
+  "gitHead": "f5d59e8f70f72a5900504ef4c4cd7af2b69cb7fb"
+}

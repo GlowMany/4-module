@@ -1,0 +1,56 @@
+{
+  "name": "ipfs-core-types",
+  "version": "0.7.3",
+  "description": "IPFS interface definitions used by implementations for API compatibility.",
+  "leadMaintainer": "Alex Potsides <alex@achingbrain.net>",
+  "types": "dist/src/index.d.ts",
+  "homepage": "https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-core-types#readme",
+  "bugs": "https://github.com/ipfs/js-ipfs/issues",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "lint": "aegir ts -p check && aegir lint"
+  },
+  "files": [
+    "src",
+    "dist",
+    "!dist/*.tsbuildinfo"
+  ],
+  "typesVersions": {
+    "*": {
+      "src/*": [
+        "dist/src/*",
+        "dist/src/*/index"
+      ],
+      "src/": [
+        "dist/src/index"
+      ]
+    }
+  },
+  "eslintConfig": {
+    "extends": "ipfs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipfs/js-ipfs.git"
+  },
+  "keywords": [
+    "IPFS",
+    "types",
+    "interface",
+    "API"
+  ],
+  "license": "(Apache-2.0 OR MIT)",
+  "dependencies": {
+    "interface-datastore": "^5.2.0",
+    "multiaddr": "^10.0.0",
+    "multiformats": "^9.4.1"
+  },
+  "devDependencies": {
+    "aegir": "^35.0.3",
+    "rimraf": "^3.0.2"
+  },
+  "contributors": [
+    "Irakli Gozalishvili <dev@gozala.io>"
+  ],
+  "gitHead": "b5488cb3ef5ab7ea24b8b2275ffa8cfa4b7b7ed1"
+}

@@ -1,0 +1,35 @@
+{
+    "name": "@types/ejs",
+    "version": "3.1.0",
+    "description": "TypeScript definitions for ejs",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ejs",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Ben Liddicott",
+            "url": "https://github.com/benliddicott",
+            "githubUsername": "benliddicott"
+        },
+        {
+            "name": "ExE Boss",
+            "url": "https://github.com/ExE-Boss",
+            "githubUsername": "ExE-Boss"
+        },
+        {
+            "name": "Piotr Błażejewicz",
+            "url": "https://github.com/peterblazejewicz",
+            "githubUsername": "peterblazejewicz"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/ejs"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "a21b359e45a41ade7b44c9af7e93461dfeda66731eb9e106816485078a98ca23",
+    "typeScriptVersion": "3.6"
+}

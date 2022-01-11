@@ -1,0 +1,33 @@
+export = SubscriptionTracker;
+/**
+ * @typedef {import('ipfs-core-types/src/pubsub').MessageHandlerFn} MessageHandlerFn
+ *
+ * @typedef {Object} Subscription
+ * @property {MessageHandlerFn} handler
+ * @property {AbortController} controller
+ */
+declare class SubscriptionTracker {
+    /** @type {Map<string, Subscription[]>} */
+    _subs: Map<string, Subscription[]>;
+    /**
+     * @param {string} topic
+     * @param {MessageHandlerFn} handler
+     * @param {AbortSignal} [signal]
+     */
+    subscribe(topic: string, handler: MessageHandlerFn, signal?: AbortSignal | undefined): AbortSignal | import("abort-controller").AbortSignal;
+    /**
+     * @param {string} topic
+     * @param {MessageHandlerFn} [handler]
+     */
+    unsubscribe(topic: string, handler?: import("ipfs-core-types/src/pubsub").MessageHandlerFn | undefined): void;
+}
+declare namespace SubscriptionTracker {
+    export { MessageHandlerFn, Subscription };
+}
+type Subscription = {
+    handler: MessageHandlerFn;
+    controller: AbortController;
+};
+type MessageHandlerFn = import('ipfs-core-types/src/pubsub').MessageHandlerFn;
+import { AbortController } from "native-abort-controller";
+//# sourceMappingURL=subscription-tracker.d.ts.map
